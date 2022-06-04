@@ -1,0 +1,47 @@
+$main-color: #a58838;
+$top-header-background-color: #353535;
+$search-background-color: #707475;
+
+@mixin flex($horizontal-state, $vertical-state) {
+    display: flex;
+    justify-content: $horizontal-state;
+    align-items: $vertical-state;
+}
+@font-face {
+    font-family: Restaurant;
+    src: url(font/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2);
+}
+%main-button {
+    background-color: $main-color;
+    color: white;
+    border: 0;
+    padding: 5px 10px;
+    width: 80px;
+    text-decoration: none;
+}
+.fade{
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes fade{
+    from{
+        opacity: .4;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.fade-megamenu{
+    animation-name: fademegamenu;
+    animation-duration: .4s;
+    animation-iteration-count: 1;
+}
+@keyframes fademegamenu{
+    from{
+        opacity: .4;
+    }
+    to{
+        opacity: 1;
+    }
+}
